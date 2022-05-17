@@ -4,6 +4,73 @@
     width: 100%;
 }
 
+header .menu {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 0 0 50px;
+    color: white;
+    text-align: center;
+}
+.logo img {
+    width: 100%;
+}
+
+#top_menu {display: none;}
+
+#hambuger { 
+    width: 35px;
+    margin: 0 50px 0 0px;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100%;
+    width: 0; /*해당 값을 0으로 줘야 자바스크립트를 통해 숨기고 나타냄을 표현 할 수 있음*/
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 88, 171);
+    background-color: rgba(0, 88, 171,0.9);
+    overflow-x: hidden; /*해당 값을  hidden으로 줘야 width값에 따라 텍스트가 숨겨지고 보여짐이 가능함. */
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    line-height: 160%;
+    font-size: 30px;
+    color: rgba(251,217,20);  transition: 0.3s; font-weight: bold; display: block;
+}
+
+.overlay a:hover, .overlay a:focus {color: #fff;}
+
+.overlay .closebtn {
+    position: absolute; 
+    top: 20px; 
+    right: 45px; 
+    font-size: 60px;
+}
+
+
 
 #main_top {
     width: 100%;
@@ -16,9 +83,9 @@
     background-position: center;
     background-size: cover;
     background-image: url("../img/main_1.jpg");
-    filter: grayscale()
-    brightness(0.5)
-    opacity(0.6) drop-shadow(0 0 0 rgb(13, 57, 255));
+    filter: 
+    brightness(0.4)
+    opacity(0.6) drop-shadow(0 0 0 rgb(0, 88, 171));
 }
 
 .main_top_text{

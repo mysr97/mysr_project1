@@ -12,22 +12,59 @@
         rel="stylesheet">
 
     <title>IKEA</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+
+    function openLeftMenu() {
+      document.getElementById("left_menu").style.width = "50%";
+    }
+    /*-- #left_menu의 width를 100%로 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
+
+    function closeLeftMenu() {
+      document.getElementById("left_menu").style.width = "0%";
+    }
+
+    </script>
+
     </head>
     
     <body>
     <div id="wrap">
 
-        <div id="main_top">
+        <header>
+            <div class="menu">
+                <div class="logo"><img src="/img/logo.png" alt=""></div>
+
+                <img src="img/menu_icon.png" id="hambuger" onclick="openLeftMenu()">
+            </div>
+    
+            <div id="left_menu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeLeftMenu()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">모든 제품</a>
+                    <a href="#">온라인 쇼룸</a>
+                    <a href="#">할인 중</a>
+                    <a href="#">신제품</a>
+                    <a href="#">아이디어</a>
+                    <a href="#">새로운 소식</a>
+                    <a href="#">매장안내</a>
+                  </div>
+            </div>
+        </header>
+
+        <div id="">
             <div class="main_top_text" onclick="">
                 <h1>IKEA</h1>
                 <p>즐거운 놀이터, 우리집</p>
                 <p>가족 봄나들이를 계획하고 있었다면 가까운 IKEA 매장을 찾아보세요.</p>
             </div>
             <div class="main_top_img">
-                
             </div>
-            
         </div>
+
+
     </div>
 </body>
 </html>
