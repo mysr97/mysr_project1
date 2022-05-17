@@ -7,11 +7,15 @@
 
 #main_top {
     width: 100%;
+    height: auto;
 }
 
-.main_top_img img{
+.main_top_img{
     width: 100%;
-    height: auto;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/main_1.jpg");
     filter: grayscale()
     brightness(0.5)
     opacity(0.6) drop-shadow(0 0 0 rgb(13, 57, 255));
@@ -34,16 +38,16 @@
 
 .main_top_text p:nth-of-type(1) {
     font-size: 2em;
+    line-height: 2em;
 }
 .main_top_text p:nth-of-type(2) {
     font-size: 1em;
-    line-height: 3em;
     margin: 0 20px 30px;
 }
 
 
 /*-----메인 호버-----*/
-.main_top_text:hover + .main_top_img img{
+.main_top_text:hover + .main_top_img {
     filter: none;
     transition: all 0.7s ease;
 } /* + 인접형제 선택자를 통해 텍스트 호버시 인접형제 내용이  변경되도록 적용함*/
