@@ -58,7 +58,11 @@ header .menu {
     padding: 10px;
     line-height: 160%;
     font-size: 30px;
-    color: rgba(251,217,20);  transition: 0.3s; font-weight: bold; display: block;
+    color: rgba(251,217,20);
+    transition: 0.3s; 
+    font-weight: bold; 
+    display: block; 
+    white-space: nowrap; /*hidden시 글자가 줄넘김 되지 않도록 해줌*/
 }
 
 .overlay a:hover, .overlay a:focus {color: #fff;}
