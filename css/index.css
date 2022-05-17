@@ -80,7 +80,7 @@ header .menu {
 /*---- 여기부터 메인 ----*/
 #main_top {
     width: 100%;
-    height: auto;
+    height: 900px;
 }
 
 .main_top_img{
@@ -132,4 +132,41 @@ header .menu {
     color:#fff;
     background-color: rgba(251,217,20,0.9);  
     transition: all 0.5s ease;
+}
+
+
+#main_product {
+    width: 100%;
+    height: 900px;
+    background-color: gold;
+}
+
+#main_event {
+    width: 100%;
+    height: 900px;
+    background-color: pink;
+}
+
+#main_campaign {
+    width: 100%;
+    height: 900px;
+    background-color: greenyellow;
+}
+
+#main_service {
+    width: 100%;
+    height: 900px;
+    background-color: peru;
+}
+
+footer .footer_menu {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+}
+
+footer .footer_content {
+    width: 100%;
+    height: 300px;
+    background-color: black;
 }
