@@ -76,6 +76,53 @@ header .menu {
     font-size: 60px;
 }
 
+/*---- dot메뉴 ----*/
+#dot_menu_bg {
+    position: fixed;
+    z-index: 103;
+    top: 250px;
+    left: 20px;
+    width: 15px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+}
+#dot_menu_bg > div {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(251,217,20);
+    border-radius: 50px;
+}
+
+#dot_menu {
+    position: fixed;
+    z-index: 104;
+    top: 250px;
+    left: 15px;
+    width: 15px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+}
+#dot_menu > a {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 88, 171);
+    border-radius: 50px;
+    opacity: 0;
+}
+
+#dot_menu > a:hover, #dot_menu > a.active {
+    opacity: 1;
+    background-color: rgba(0, 88, 171);
+} /*각 a호버시 나타나도록 하고, 첫번째 a는 첫화면일때 보여져있도록 함*/
+
+
 
 /*---- 여기부터 메인 ----*/
 #main_top {
@@ -185,13 +232,13 @@ footer .footer_content {
 
 .event_wrap {
     display: flex;
+    margin: 0 30px;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .event_box {
     width: 28%;
-    height: 70&;
     margin-top: 100px;
 }
 
@@ -212,7 +259,7 @@ footer .footer_content {
     border: 1px solid #ddd;
     background-color: white;
     width: 100%;
-    min-height: 35%;
+    min-height: 45%;
 }
 .event_text_box h3 {
     padding: 20px 20px 10px;
@@ -222,8 +269,8 @@ footer .footer_content {
     margin: 0 20px 0px;
 }
 
-.event_img_box:hover + .event_text_box {
+.event_img_box:hover + .event_text_box, .event_text_box:hover {
     background-color: rgba(0, 88, 171,0.9);
     color: #fff;
     transition: all 0.3s ease;
-} /* + 인접형제 선택자를 통해 텍스트 호버시 인접형제 내용이  변경되도록 적용함*/
+} /* + 인접형제 선택자를 통해 이미지 호버시 인접형제(텍스트박스) 내용이  변경되도록 적용함과 동시에 텍스트박스를 선택해도 내용 변경됨.*/

@@ -17,14 +17,81 @@
 
     <script>
 
-    function openLeftMenu() {
-      document.getElementById("left_menu").style.width = "50%";
-    }
-    /*-- #left_menu의 width를 100%로 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
+        // 햄버거 메뉴
+        function openLeftMenu() {
+            document.getElementById("left_menu").style.width = "30%";
+        }/*-- #left_menu의 width를 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
+        function closeLeftMenu() {
+            document.getElementById("left_menu").style.width = "0%";
+        }
 
-    function closeLeftMenu() {
-      document.getElementById("left_menu").style.width = "0%";
-    }
+        
+        // dot 메뉴 시작
+            // dot 메뉴 클릭시 active
+            $(function () {
+                $('#dot_1').click(function () {
+                    $('#dot_menu a').removeClass('active');
+                    $('#dot_1').addClass('active');
+                });
+                $('#dot_2').click(function () {
+                    $('#dot_menu a').removeClass('active');
+                    $('#dot_2').addClass('active');
+                });
+                $('#dot_3').click(function () {
+                    $('#dot_menu a').removeClass('active');
+                    $('#dot_3').addClass('active');
+                });
+                $('#dot_4').click(function () {
+                    $('#dot_menu a').removeClass('active');
+                    $('#dot_4').addClass('active');
+                });
+                $('#dot_5').click(function () {
+                    $('#dot_menu a').removeClass('active');
+                    $('#dot_5').addClass('active');
+                });
+            });
+
+            // dot 메뉴 스크롤시 active
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() >= 0) {
+                    $("#dot_1").addClass("active");
+                }
+
+                if ($(window).scrollTop() >= 630) {
+                    $("#dot_1").removeClass("active");
+                    $("#dot_2").addClass("active");
+                } else {
+                    $("#dot_2").removeClass("active");
+                }
+
+                if ($(window).scrollTop() >= 1500) {
+                    $("#dot_2").removeClass("active");
+                    $("#dot_3").addClass("active");
+                } else {
+                    $("#dot_3").removeClass("active");
+                }
+
+                if ($(window).scrollTop() >= 2400) {
+                    $("#dot_3").removeClass("active");
+                    $("#dot_4").addClass("active");
+                } else {
+                    $("#dot_4").removeClass("active");
+                }
+
+                if ($(window).scrollTop() >= 3300) {
+                    $("#dot_4").removeClass("active");
+                    $("#dot_5").addClass("active");
+                } else {
+                    $("#dot_5").removeClass("active");
+                }
+
+                if ($(window).scrollTop() >= 4100) {
+                    $("#dot_5").removeClass("active");
+                }
+            });
+
+
+
 
     </script> <!-- js파일로 나중에 분리해놓기 -->
 
@@ -52,6 +119,22 @@
                     <a href="#">새로운 소식</a>
                     <a href="#">매장안내</a>
                   </div>
+            </div>
+            
+            <div id="dot_menu_bg">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="dot_menu">
+                <a id="dot_1" class="active" href="#main_top"></a>
+                <a id="dot_2" href="#main_product"></a>
+                <a id="dot_3" href="#main_event"></a>
+                <a id="dot_4" href="#main_campaign"></a>
+                <a id="dot_5" href="#main_service"></a>
             </div>
         </header>
 
