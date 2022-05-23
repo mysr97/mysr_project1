@@ -90,7 +90,34 @@
                 }
             });
 
+            //dot _menu 앵커 스크롤 애니메이션
+                $(document).ready(function ($) {
+                    $("#dot_1").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
 
+                    });
+                    $("#dot_2").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+
+                    });
+                    $("#dot_3").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+
+                    });
+                    $("#dot_4").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+
+                    });
+                    $("#dot_5").click(function (event) {
+                        event.preventDefault();
+                        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+
+                    });
+                });
 
 
     </script> <!-- js파일로 나중에 분리해놓기 -->
@@ -157,6 +184,11 @@
 
         <div id="main_event">
             <div class="main_title_text">새로운 소식</div>
+
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+
             <div class="event_wrap">
                 <div class="event_box">
                     <a href="#" class="event_img_box">
@@ -164,8 +196,7 @@
                     </a>
                     <a href="#" class="event_text_box">
                         <h3>IKEA with 신한카드</h3>
-                        <p>IKEA를 사랑해주시는 여러분들에게 조금 더 나은 혜택과 서비스를 제공하고자 준비했어요.
-                            더 다양해진 결제 옵션으로 많은 사람들이 홈퍼니싱에 대한 영감과 아이디어를 집으로 가져갈 수 있기를 바라요.</p>
+                        <p>IKEA를 사랑해주시는 여러분들에게 조금 더 나은 혜택과 서비스를 제공하고자 준비했어요.</p>
                     </a>
                 </div>
                 <div class="event_box">
@@ -174,7 +205,7 @@
                     </a>
                     <a href="#" class="event_text_box">
                         <h3>부담없는 가격의 특별한 선물</h3>
-                        <p>특별한 사람에게는 특별한 선물이 어울리죠. 모든 사람에게는 각자의 취향이 있어요. 깜짝 선물을 좋아하는 사람도 있고, 직접 선물을 고르고 싶어 하는 사람도 있죠. 어떤 기념일이든 누구를 위한 선물이든, IKEA에서 찾아보세요.</p>
+                        <p>어떤 기념일이든 누구를 위한 선물이든, IKEA에서 찾아보세요.</p>
                     </a>
                 </div>
                 <div class="event_box">
@@ -183,14 +214,18 @@
                     </a>
                     <a href="#" class="event_text_box">
                         <h3>자원순환 허브 서비스</h3>
-                        <p>IKEA는 자원순환을 실천하고 기후변화에 대처하는 기업으로 거듭나기 위해 모든 IKEA 매장의 알뜰코너를 자원순환 허브로 전환하였습니다. 자원순환 허브는 오늘의 추천 제품, 안내데스크, 제품판매, 또는 체험•전시 구역으로 나눠집니다.</p>
+                        <p>IKEA는 자원순환을 실천하고 기후변화에 대처하는 기업으로 거듭나기 위해 모든 IKEA 매장의 알뜰코너를 자원순환 허브로 전환하였습니다.</p>
                     </a>
                 </div>
             </div>
         </div>
 
+
         <div id="main_campaign">
+            <div class="main_title_text">새삶스럽게 이케아
+            </div>
         </div>
+
 
         <div id="main_service">
             <div class="main_title_text">다양한 이케아 서비스</div>
@@ -255,27 +290,27 @@
                     </ul>
                     <ul>
                         <li><a href="#">쇼핑하기</a></li>
-                        <li><a href="#">메뉴2</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
+                        <li><a href="#">전화주문</a></li>
+                        <li><a href="#">IKEA for Business</a></li>
+                        <li><a href="#">셀프 플래닝</a></li>
+                        <li><a href="#">IKEA 모바일 앱</a></li>
+                        <li><a href="#">제품 구매 가이드</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">서비스</a></li>
-                        <li><a href="#">메뉴2</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
+                        <li><a href="#">IKEA 서비스</a></li>
+                        <li><a href="#">배송 서비스</a></li>
+                        <li><a href="#">조립 서비스</a></li>
+                        <li><a href="#">설치 서비스</a></li>
+                        <li><a href="#">주방 서비스</a></li>
+                        <li><a href="#">플래닝 서비스</a></li>
                     </ul>
                     <ul>
                         <li><a href="#">IKEA 이야기</a></li>
-                        <li><a href="#">메뉴2</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
-                        <li><a href="#">메뉴3</a></li>
-                        <li><a href="#">메뉴4</a></li>
+                        <li><a href="#">브랜드 소개</a></li>
+                        <li><a href="#">집에서의 삶</a></li>
+                        <li><a href="#">지속가능한 생활</a></li>
+                        <li><a href="#">내가 아끼는 집, 나를 아끼는 집</a></li>
+                        <li><a href="#">뉴스룸</a></li>
                     </ul>
                 </div>
             </div>
