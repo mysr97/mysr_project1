@@ -134,6 +134,7 @@ header .menu {
     padding: 100px 0 0;
     font-size: 2.5em;
     text-align: center;
+    cursor: pointer;
 } /*product, event, service 부분*/
 
 
@@ -309,12 +310,26 @@ header .menu {
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.main_campaign_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#main_campaign:hover > .main_campaign_video {
+    display: block;
+} /*#main_campaign을 호버하면 자식.main_campaign_video이 보여지도록 */
 
 #main_campaign > .main_title_text {
     color: #fff;
     width: 60%;
     position: absolute;
+    z-index: 2;
     right: 0;
 }
 
