@@ -284,6 +284,7 @@
                 <!-- js 나중에 분리 -->
                 <script>
 
+                    //처음 화면 진입시 적용
                     if (window.matchMedia("(min-width: 1200px)").matches) {
                         var swiper = new Swiper('.swiper-container', {
                             pagination: '.swiper-pagination',
@@ -318,6 +319,7 @@
                             autoplayDisableOnInteraction: false  
                         }); }
 
+                    //리사이즈시 적용
                     $(window).resize(function(){
                         if (window.matchMedia("(min-width: 1200px)").matches) {
                         var swiper = new Swiper('.swiper-container', {
@@ -330,7 +332,7 @@
                             autoplay: 2500, // 오토플레이 진행 속도
                             autoplayDisableOnInteraction: false  
                         });
-                    } else if (window.matchMedia("(min-width: 600px)").matches) { 
+                    } else if (window.matchMedia("(min-width: 700px)").matches) { 
                         var swiper = new Swiper('.swiper-container', {
                             pagination: '.swiper-pagination',
                             slidesPerView: 2.3, // 몇개 보이게 할 건지
