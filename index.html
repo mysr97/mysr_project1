@@ -283,17 +283,35 @@
             
                 <!-- js 나중에 분리 -->
                 <script>
-                var swiper = new Swiper('.swiper-container', {
+                var max = window.matchMedia("screen and (min-width: 1200px)");
+
+                max.addListener(function(e) {
+                if (e.matches) {
+                    var swiper = new Swiper('.swiper-container', {
                     pagination: '.swiper-pagination',
-                    slidesPerView: 3.8, // 몇개 보이게 할 건지
+                    slidesPerView: 3.5, // 몇개 보이게 할 건지
                     paginationClickable: true,
                     spaceBetween: 50, //슬라이드 간격
                     loop: true, // 처음~끝 반복 여부
                     centeredSlides: true,
                     autoplay: 2500, // 오토플레이 진행 속도
-                    autoplayDisableOnInteraction: false
+                    autoplayDisableOnInteraction: false  
                 });
-                </script>
+                } else { 
+                    var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    slidesPerView: 2.3, // 몇개 보이게 할 건지
+                    paginationClickable: true,
+                    spaceBetween: 50, //슬라이드 간격
+                    loop: true, // 처음~끝 반복 여부
+                    centeredSlides: true,
+                    autoplay: 2500, // 오토플레이 진행 속도
+                    autoplayDisableOnInteraction: false  
+                }); 
+                }
+                });
+            </script>
+
         </div>
 
 
