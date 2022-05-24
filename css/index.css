@@ -203,7 +203,7 @@ header .menu {
     width: 100%;
     height: 100vh;
     min-height: 900px;
-    background-color: rgb(255, 255, 236);
+    background-color: rgb(255, 255, 241);
     overflow: hidden;
 } /*슬라이드 css는 swiper.min.css에서 변경*/
 
