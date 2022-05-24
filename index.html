@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -14,6 +15,7 @@
     <title>IKEA</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/swiper.min.js"></script><!--제품 슬라이드 -->
 
     <script>
 
@@ -165,8 +167,9 @@
             </div>
         </header>
 
-        <!-- 여기부터 메인 배경. -->
 
+
+        <!-- 여기부터 메인 배경. -->
         <div id="main_top">
             <div class="main_top_text" onclick="location.href='#'">
                 <h1>IKEA</h1>
@@ -178,10 +181,49 @@
         </div>
 
 
+
+        <!-- 여기부터 메인 제품 -->
         <div id="main_product">
             <div class="main_title_text">모든 제품</div>
+
+            <div id="slide_wrap">
+                <div class="slide_gradient_right"></div>
+                <div class="slide_gradient_left"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">침실 부분</div>
+                        <div class="swiper-slide">거실 부분</div>
+                        <div class="swiper-slide">주방 부분</div>
+                        <div class="swiper-slide">다이닝 부분</div>
+                        <div class="swiper-slide">어린이 IKEA 부분</div>
+                        <div class="swiper-slide">욕실</div>
+                        <div class="swiper-slide">현관</div>
+                        <div class="swiper-slide">야외공간</div>
+                        <div class="swiper-slide">IKEA for Business</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+                <!-- js 나중에 분리 -->
+                <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    slidesPerView: 3.8, // 몇개 보이게 할 건지
+                    paginationClickable: true,
+                    spaceBetween: 50, //슬라이드 간격
+                    loop: true, // 처음~끝 반복 여부
+                    centeredSlides: true,
+                    autoplay: 2500, // 오토플레이 진행 속도
+                    autoplayDisableOnInteraction: false
+                });
+                </script>
         </div>
 
+
+
+        <!-- 여기부터 메인 이벤트 -->
         <div id="main_event">
             <div class="main_title_text">새로운 소식</div>
 
@@ -221,6 +263,8 @@
         </div>
 
 
+
+        <!-- 여기부터 메인 캠페인 -->
         <div id="main_campaign">
             <div class="main_title_text">새삶스럽게 이케아
             </div>
@@ -274,8 +318,9 @@
             
         </div>
 
+
+        <!-- 여기부터 푸터 -->
         <footer>
-            
             <div class="footer_menu">
                 <div class="footer_logo"><img src="img/logo.png" alt="1"></div>
                 <div class="footer_menu_box">

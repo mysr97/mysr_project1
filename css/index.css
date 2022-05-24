@@ -125,6 +125,19 @@ header .menu {
 
 
 /*---- 여기부터 메인 ----*/
+
+/*-----메인 공통 부분-----*/
+
+.main_title_text {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    font-size: 2.5em;
+    text-align: center;
+} /*product, event, service 부분*/
+
+
+/*---- 메인 탑 ----*/
 #main_top {
     width: 100%;
     height: 100vh;
@@ -184,23 +197,16 @@ header .menu {
 }
 
 
+
+/*---- 메인 제품 부분 ----*/
 #main_product {
     width: 100%;
     height: 100vh;
     min-height: 900px;
-    background-color: beige;
-}
+    background-color: rgb(255, 255, 236);
+    overflow: hidden;
+} /*슬라이드 css는 swiper.min.css에서 변경*/
 
-
-/*-----메인 공통 부분-----*/
-
-.main_title_text {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0 0;
-    font-size: 2.5em;
-    text-align: center;
-} /*product, event, service 부분*/
 
 
 
