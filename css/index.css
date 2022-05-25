@@ -388,6 +388,7 @@ header .menu {
     transform: scale(1.15);
     left: 75px;
     bottom: -10px;
+    filter:brightness(1.2);
 }
 
 .main_campaign_baby_hover:hover ~ .main_campaign_box {
@@ -607,7 +608,6 @@ footer .footer_content {
     display: flex;
     flex-flow: row wrap;
 }
-
 .footer_content_right > ul {
     width: 100%;
     height: 30%;
@@ -625,12 +625,14 @@ footer .footer_content {
 .footer_content_right > ul li a{
     color: #eee;
 }
-
-
 .footer_content_right > p {
     width: 100%;
     height: 70%;
     display: flex;
     margin: 0 5%;
     font-size: 0.7em;
+}
+
+.footer_content_left {
+    width: 50%;
 }
