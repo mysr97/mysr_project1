@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_tap.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -537,7 +538,7 @@
             </div>
 
             <div class="footer_content">
-                <div class="footer_content_right">
+                <div class="footer_content_left">
                     <ul>
                         <li><a href="#">개인정보처리방침</a></li>
                         <li>|</li>
@@ -558,9 +559,24 @@
                         TEL : 1670-4532 
                     </p>
                 </div>
-                <div class="footer_content_left">
-                    sns관련 내용 + search창 넣기
+                <div class="footer_content_right"><!--사이즈 1200이하가 되는 경우 위로 left위로 올라가도록 flex 설정-->
+                    <div class="footer_content_right_top">
+                        <a href="https://www.instagram.com/accounts/login/?next=/ikeakr/" target="_blank"><img src="img/instagram.png"
+                                alt="인스타그램"></a>
+                        <a href="https://www.facebook.com/IKEA.kr/" target="_blank"><img src="img/facebook.png" alt="페이스북"></a>
+                        <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" target="_blank"><img src="img/youtube.png"
+                                alt="유튜브"></a>
+                    </div>
+                    <div class="footer_content_right_bottom"> 
+                        <span>이케아 매장 검색하기</span>
+                        <form action="">
+                            <input type="search" name="store" placeholder=" 매장 검색">
+                            <button type="submit">검색</button>
+                        </form>
+                    </div>
                 </div>
+
+                
 
             </div>
         </footer>
