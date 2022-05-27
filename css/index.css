@@ -145,7 +145,7 @@
     .main_title_text {
         width: 100%;
         margin: 0 auto;
-        padding: 100px 0 0;
+        padding: 60px 0 0;
         font-size: 2.5em;
         text-align: center;
         cursor: pointer;
@@ -183,19 +183,19 @@
     }
 
     .main_top_text h1 {
-        margin: 10px 0 0px;
-        font-size: 8em;
+        margin: 10px 15px 0px;
+        font-size: 7em;
         font-weight: 500;
     }
 
     .main_top_text p:nth-of-type(1) {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 2em;
         font-weight: 500;
     }
 
     .main_top_text p:nth-of-type(2) {
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 0 25px 70px;
     }
 
@@ -721,6 +721,7 @@
 
     .footer_content_right_bottom input {
         border: 1px solid #eee;
+        width: 80%;
         color: #eee;
         background-color: transparent;
         line-height: 20px;

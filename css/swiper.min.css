@@ -16,7 +16,7 @@
     .swiper-container {
         z-index: 1;
          width: 100%;
-         height: 50vh;
+         height: 55vh;
          margin: 5% auto 70px; /*해당 부분 조절로  dashed 메뉴 보이게*/
          margin-left: auto;
          margin-right: auto;
