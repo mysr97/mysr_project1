@@ -43,7 +43,7 @@
         function closeLeftMenu() {
             document.getElementById("left_menu").style.width = "0%";
         }
-    }
+    };
         
         // dot 메뉴 시작
             // dot 메뉴 클릭시 active
@@ -86,6 +86,14 @@
                 $("#dot_2").removeClass("active");
             }
 
+            if ($(window).scrollTop() >= 900) {
+                $("#menu").css({"background-color":"white"});
+                $("#menu").css({"height":"100px"});
+            } else {
+                $("#menu").css({"background-color":"transparent"});
+                $("#menu").css({"height":"180px"});
+            }
+
             if ($(window).scrollTop() >= 1500) {
                 $("#dot_2").removeClass("active");
                 $("#dot_3").addClass("active");
@@ -122,6 +130,14 @@
                 $("#dot_2").addClass("active");
             } else {
                 $("#dot_2").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 900) {
+                $("#menu").css({"background-color":"white"});
+                $("#menu").css({"height":"100px"});
+            } else {
+                $("#menu").css({"background-color":"transparent"});
+                $("#menu").css({"height":"180px"});
             }
 
             if ($(window).scrollTop() >= 1400) {
@@ -161,6 +177,16 @@
             } else {
                 $("#dot_2").removeClass("active");
             }
+
+            if ($(window).scrollTop() >= 850) {
+                $("#menu").css({"background-color":"white"});
+                $("#menu").css({"height":"90px"});
+                $("#menu").css({"box-shadow":"0px 3px 15px rgba(0,0,0,0.2)"});
+            } else {
+                $("#menu").css({"background-color":"transparent"});
+                $("#menu").css({"height":"180px"});
+                $("#menu").css({"box-shadow":"none"});
+            } // 메뉴바 900PX 보다 스크롤 되는 경우 배경 생기게
 
             if ($(window).scrollTop() >= 1300) {
                 $("#dot_2").removeClass("active");
@@ -277,7 +303,7 @@
 
         <!-- 여기부터 메인 메뉴 -->
         <header>
-            <div class="menu">
+            <div id="menu">
                 <div class="logo" onclick="location.href='#'"><img src="img/logo.png" alt="로고이미지"></div>
 
                 <img src="img/menu_icon.png" id="hambuger" onclick="openLeftMenu()">

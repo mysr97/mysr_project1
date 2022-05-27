@@ -5,7 +5,7 @@
     }
 
     /*---- 여기부터 메뉴 ----*/
-    header .menu {
+    header #menu {
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -750,7 +750,7 @@
     }
 
     /*---- 여기부터 메뉴 ----*/
-    header .menu {
+    header #menu {
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -1490,7 +1490,7 @@
     }
 
     /*---- 여기부터 메뉴 ----*/
-    header .menu {
+    header #menu {
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -1498,6 +1498,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background-color: transparent;
     }
 
     .logo {
