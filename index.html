@@ -55,43 +55,160 @@
             });
 
             // dot 메뉴 스크롤시 active
-            $(window).on("scroll", function () {
-                if ($(window).scrollTop() >= 0) {
-                    $("#dot_1").addClass("active");
-                }
 
-                if ($(window).scrollTop() >= 630) {
-                    $("#dot_1").removeClass("active");
-                    $("#dot_2").addClass("active");
-                } else {
-                    $("#dot_2").removeClass("active");
-                }
 
-                if ($(window).scrollTop() >= 1500) {
-                    $("#dot_2").removeClass("active");
-                    $("#dot_3").addClass("active");
-                } else {
-                    $("#dot_3").removeClass("active");
-                }
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() >= 0) {
+                $("#dot_1").addClass("active");
+            }
 
-                if ($(window).scrollTop() >= 2400) {
-                    $("#dot_3").removeClass("active");
-                    $("#dot_4").addClass("active");
-                } else {
-                    $("#dot_4").removeClass("active");
-                }
+            if ($(window).scrollTop() >= 630) {
+                $("#dot_1").removeClass("active");
+                $("#dot_2").addClass("active");
+            } else {
+                $("#dot_2").removeClass("active");
+            }
 
-                if ($(window).scrollTop() >= 3300) {
-                    $("#dot_4").removeClass("active");
-                    $("#dot_5").addClass("active");
-                } else {
-                    $("#dot_5").removeClass("active");
-                }
+            if ($(window).scrollTop() >= 1500) {
+                $("#dot_2").removeClass("active");
+                $("#dot_3").addClass("active");
+            } else {
+                $("#dot_3").removeClass("active");
+            }
 
-                if ($(window).scrollTop() >= 4100) {
-                    $("#dot_5").removeClass("active");
-                }
-            });
+            if ($(window).scrollTop() >= 2400) {
+                $("#dot_3").removeClass("active");
+                $("#dot_4").addClass("active");
+            } else {
+                $("#dot_4").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 3300) {
+                $("#dot_4").removeClass("active");
+                $("#dot_5").addClass("active");
+            } else {
+                $("#dot_5").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 4100) {
+                $("#dot_5").removeClass("active");
+            }
+        });
+    } else if (window.matchMedia("(min-width: 700px)").matches) {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() >= 0) {
+                $("#dot_1").addClass("active");
+            }
+
+            if ($(window).scrollTop() >= 630) {
+                $("#dot_1").removeClass("active");
+                $("#dot_2").addClass("active");
+            } else {
+                $("#dot_2").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 1400) {
+                $("#dot_2").removeClass("active");
+                $("#dot_3").addClass("active");
+            } else {
+                $("#dot_3").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 2300) {
+                $("#dot_3").removeClass("active");
+                $("#dot_4").addClass("active");
+            } else {
+                $("#dot_4").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 3200) {
+                $("#dot_4").removeClass("active");
+                $("#dot_5").addClass("active");
+            } else {
+                $("#dot_5").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 4300) {
+                $("#dot_5").removeClass("active");
+            }
+        });
+    } else {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() >= 0) {
+                $("#dot_1").addClass("active");
+            }
+
+            if ($(window).scrollTop() >= 600) {
+                $("#dot_1").removeClass("active");
+                $("#dot_2").addClass("active");
+            } else {
+                $("#dot_2").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 1300) {
+                $("#dot_2").removeClass("active");
+                $("#dot_3").addClass("active");
+            } else {
+                $("#dot_3").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 2700) {
+                $("#dot_3").removeClass("active");
+                $("#dot_4").addClass("active");
+            } else {
+                $("#dot_4").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 3600) {
+                $("#dot_4").removeClass("active");
+                $("#dot_5").addClass("active");
+            } else {
+                $("#dot_5").removeClass("active");
+            }
+
+            if ($(window).scrollTop() >= 5100) {
+                $("#dot_5").removeClass("active");
+            }
+        });
+    }
+
+                    //리사이즈시 적용
+                    $(window).resize(function(){
+                        if (window.matchMedia("(min-width: 1200px)").matches) {
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            slidesPerView: 3.5, // 몇개 보이게 할 건지
+                            paginationClickable: true,
+                            spaceBetween: 50, //슬라이드 간격
+                            loop: true, // 처음~끝 반복 여부
+                            centeredSlides: true,
+                            autoplay: 2500, // 오토플레이 진행 속도
+                            autoplayDisableOnInteraction: false  
+                        });
+                    } else if (window.matchMedia("(min-width: 700px)").matches) { 
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            slidesPerView: 2.3, // 몇개 보이게 할 건지
+                            paginationClickable: true,
+                            spaceBetween: 50, //슬라이드 간격
+                            loop: true, // 처음~끝 반복 여부
+                            centeredSlides: true,
+                            autoplay: 2500, // 오토플레이 진행 속도
+                            autoplayDisableOnInteraction: false  
+                        }); 
+                    } else { 
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            slidesPerView: 1.4, // 몇개 보이게 할 건지
+                            paginationClickable: true,
+                            spaceBetween: 50, //슬라이드 간격
+                            loop: true, // 처음~끝 반복 여부
+                            centeredSlides: true,
+                            autoplay: 2500, // 오토플레이 진행 속도
+                            autoplayDisableOnInteraction: false  
+                        }); }
+                    });
 
             //dot _menu 앵커 스크롤 애니메이션
                 $(document).ready(function ($) {
