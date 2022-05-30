@@ -86,13 +86,15 @@
                 $("#dot_2").removeClass("active");
             }
 
-            if ($(window).scrollTop() >= 900) {
+            if ($(window).scrollTop() >= 850) {
                 $("#menu").css({"background-color":"white"});
-                $("#menu").css({"height":"100px"});
+                $("#menu").css({"height":"90px"});
+                $("#menu").css({"box-shadow":"0px 3px 15px rgba(0,0,0,0.2)"});
             } else {
                 $("#menu").css({"background-color":"transparent"});
                 $("#menu").css({"height":"180px"});
-            }
+                $("#menu").css({"box-shadow":"none"});
+            } // 메뉴바 900PX 보다 스크롤 되는 경우 배경 생기게
 
             if ($(window).scrollTop() >= 1500) {
                 $("#dot_2").removeClass("active");
@@ -132,13 +134,15 @@
                 $("#dot_2").removeClass("active");
             }
 
-            if ($(window).scrollTop() >= 900) {
+            if ($(window).scrollTop() >= 850) {
                 $("#menu").css({"background-color":"white"});
-                $("#menu").css({"height":"100px"});
+                $("#menu").css({"height":"90px"});
+                $("#menu").css({"box-shadow":"0px 3px 15px rgba(0,0,0,0.2)"});
             } else {
                 $("#menu").css({"background-color":"transparent"});
                 $("#menu").css({"height":"180px"});
-            }
+                $("#menu").css({"box-shadow":"none"});
+            } // 메뉴바 900PX 보다 스크롤 되는 경우 배경 생기게
 
             if ($(window).scrollTop() >= 1400) {
                 $("#dot_2").removeClass("active");
