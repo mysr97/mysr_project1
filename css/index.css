@@ -158,17 +158,28 @@
         width: 100%;
         height: 100vh;
         min-height: 900px;
+        position: relative;
+    }
+
+    .main_top_overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 88, 171,0.35);
+        display: block;
     }
 
     .main_top_img {
         width: 100%;
         height: 100%;
+        position: absolute;
+        z-index: 1;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-image: url("../img/main_1.jpg");
-        filter:
-            brightness(0.4) opacity(0.6) drop-shadow(0 0 0 rgb(0, 88, 171));
+        filter: brightness(0.7) opacity(0.7) grayscale(0.8);
     }
 
     .main_top_text {
@@ -180,6 +191,7 @@
         top: 50%;
         left: 50%;
         z-index: 99;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .main_top_text h1 {
@@ -201,8 +213,12 @@
 
 
     /*-----메인 호버-----*/
-    .main_top_text:hover+.main_top_img {
-        filter: none;
+    .main_top_text:hover + .main_top_overlay {
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .main_top_text:hover ~ .main_top_img {
+        filter: brightness(0.9);
         transition: all 0.3s ease;
     }
 
@@ -905,15 +921,25 @@
         min-height: 900px;
     }
 
+    .main_top_overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 88, 171,0.35);
+        display: block;
+    }
+
     .main_top_img {
         width: 100%;
         height: 100%;
+        position: absolute;
+        z-index: 1;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-image: url("../img/main_1.jpg");
-        filter:
-            brightness(0.4) opacity(0.6) drop-shadow(0 0 0 rgb(0, 88, 171));
+        filter: brightness(0.7) opacity(0.7) grayscale(0.8);
     }
 
     .main_top_text {
@@ -925,6 +951,7 @@
         top: 50%;
         left: 50%;
         z-index: 99;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .main_top_text h1 {
@@ -946,8 +973,12 @@
 
 
     /*-----메인 호버-----*/
-    .main_top_text:hover+.main_top_img {
-        filter: none;
+    .main_top_text:hover + .main_top_overlay {
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .main_top_text:hover ~ .main_top_img {
+        filter: brightness(0.9);
         transition: all 0.3s ease;
     }
 
@@ -1647,15 +1678,25 @@
         min-height: 900px;
     }
 
+    .main_top_overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 88, 171,0.35);
+        display: block;
+    }
+
     .main_top_img {
         width: 100%;
         height: 100%;
+        position: absolute;
+        z-index: 1;
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-image: url("../img/main_1.jpg");
-        filter:
-            brightness(0.4) opacity(0.6) drop-shadow(0 0 0 rgb(0, 88, 171));
+        filter: brightness(0.7) opacity(0.7) grayscale(0.8);
     }
 
     .main_top_text {
@@ -1667,6 +1708,7 @@
         top: 50%;
         left: 50%;
         z-index: 99;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .main_top_text h1 {
@@ -1688,8 +1730,12 @@
 
 
     /*-----메인 호버-----*/
-    .main_top_text:hover+.main_top_img {
-        filter: none;
+    .main_top_text:hover + .main_top_overlay {
+        display: none;
+        transition: all 0.3s ease;
+    }
+    .main_top_text:hover ~ .main_top_img {
+        filter: brightness(0.9);
         transition: all 0.3s ease;
     }
 
