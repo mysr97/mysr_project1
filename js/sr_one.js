@@ -49,8 +49,6 @@
                 });
     
                 // dot 메뉴 스크롤시 active
-    
-    
         if (window.matchMedia("(min-width: 1200px)").matches) {
             $(window).on("scroll", function () {
                 if ($(window).scrollTop() >= 0) {
@@ -74,28 +72,28 @@
                     $("#menu").css({"box-shadow":"none"});
                 } // 메뉴바 900PX 보다 스크롤 되는 경우 배경 생기게
     
-                if ($(window).scrollTop() >= 1500) {
+                if ($(window).scrollTop() >= 1700) {
                     $("#dot_2").removeClass("active");
                     $("#dot_3").addClass("active");
                 } else {
                     $("#dot_3").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 2400) {
+                if ($(window).scrollTop() >= 2500) {
                     $("#dot_3").removeClass("active");
                     $("#dot_4").addClass("active");
                 } else {
                     $("#dot_4").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 3300) {
+                if ($(window).scrollTop() >= 3350) {
                     $("#dot_4").removeClass("active");
                     $("#dot_5").addClass("active");
                 } else {
                     $("#dot_5").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 4100) {
+                if ($(window).scrollTop() >= 4400) {
                     $("#dot_5").removeClass("active");
                 }
             });
@@ -129,21 +127,21 @@
                     $("#dot_3").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 2300) {
+                if ($(window).scrollTop() >= 4050) {
                     $("#dot_3").removeClass("active");
                     $("#dot_4").addClass("active");
                 } else {
                     $("#dot_4").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 3200) {
+                if ($(window).scrollTop() >= 4800) {
                     $("#dot_4").removeClass("active");
                     $("#dot_5").addClass("active");
                 } else {
                     $("#dot_5").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 4300) {
+                if ($(window).scrollTop() >= 6000) {
                     $("#dot_5").removeClass("active");
                 }
             });
@@ -153,7 +151,7 @@
                     $("#dot_1").addClass("active");
                 }
     
-                if ($(window).scrollTop() >= 600) {
+                if ($(window).scrollTop() >= 630) {
                     $("#dot_1").removeClass("active");
                     $("#dot_2").addClass("active");
                 } else {
@@ -170,21 +168,21 @@
                     $("#menu").css({"box-shadow":"none"});
                 } // 메뉴바 900PX 보다 스크롤 되는 경우 배경 생기게
     
-                if ($(window).scrollTop() >= 1300) {
+                if ($(window).scrollTop() >= 1400) {
                     $("#dot_2").removeClass("active");
                     $("#dot_3").addClass("active");
                 } else {
                     $("#dot_3").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 2700) {
+                if ($(window).scrollTop() >= 3000) {
                     $("#dot_3").removeClass("active");
                     $("#dot_4").addClass("active");
                 } else {
                     $("#dot_4").removeClass("active");
                 }
     
-                if ($(window).scrollTop() >= 3600) {
+                if ($(window).scrollTop() >= 3650) {
                     $("#dot_4").removeClass("active");
                     $("#dot_5").addClass("active");
                 } else {

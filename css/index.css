@@ -386,7 +386,7 @@
         background-color: rgba(251, 217, 20, 0.8);
         margin: 50px 15% 0;
         cursor: pointer;
-        z-index: 5s;
+        z-index: 5;
     }
 
     .main_campaign_btn span {
@@ -1130,7 +1130,7 @@
         background-color: rgba(251, 217, 20, 0.8);
         margin: 250px 20% 0;
         cursor: pointer;
-        z-index: 5s;
+        z-index: 5;
     }
 
     .main_campaign_btn span {
@@ -1871,7 +1871,7 @@
         background-color: rgba(251, 217, 20, 0.8);
         margin: 180px 20% 0;
         cursor: pointer;
-        z-index: 5s;
+        z-index: 5;
     }
 
     .main_campaign_btn span {
