@@ -707,6 +707,7 @@
         width: 95%;
         height: auto;
         border: none;
+        position: relative;
         filter: drop-shadow(30px 20px 15px rgba(0,0,0,0.2));
     }
     /* .sub_content_img {
@@ -1184,6 +1185,7 @@ header #menu {
     width: 100%;
     border: none;
     height: auto;
+    position: relative;
     filter: drop-shadow(30px 20px 15px rgba(0,0,0,0.2));
 }
 /* .sub_content_img {
