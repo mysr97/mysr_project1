@@ -22,6 +22,7 @@
                 document.getElementById("left_menu").style.width = "0%";
             }
         };
+
             
             // dot 메뉴 시작
                 // dot 메뉴 클릭시 active
