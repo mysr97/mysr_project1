@@ -76,9 +76,19 @@
         <div id="sub_content">
             <h1>신제품</h1>
             <p>새단장의 시간인가요? 신제품을 둘러보면서 영감을 얻어보세요.</p>
-            <div class="circle_random_box">
-                <div class="circle_random"></div>
+            <div id="slide_box">
+                <img src="img/sub_product_j1.jpg" alt="1" id="slide">
             </div>
+            <script>
+                let slide = document.getElementById("slide");
+                let img_arr = ["img/sub_product_j1.jpg", "img/sub_product_j2.jpg", "img/sub_product_j3.jpg", "img/sub_product_j4.jpg","img/sub_product_j5.jpg","img/sub_product_j6.jpg"];
+           
+                setInterval(() => {
+                    let random = Math.floor(Math.random() * img_arr.length);
+                    slide.src= img_arr[random];
+                }, 400);
+           </script>
+
             <div class="circle"></div>
             <div class="circle2"></div>
             <div class="circle3"></div>
