@@ -71,6 +71,7 @@
         </header>
     
         <div id="sub_top">
+
         </div>
     
         <div id="sub_content">
@@ -83,10 +84,21 @@
                 let slide = document.getElementById("slide");
                 let img_arr = ["img/sub_product_j1.jpg", "img/sub_product_j2.jpg", "img/sub_product_j3.jpg", "img/sub_product_j4.jpg","img/sub_product_j5.jpg","img/sub_product_j6.jpg"];
            
-                setInterval(() => {
+                let interval = setInterval(() => {
                     let random = Math.floor(Math.random() * img_arr.length);
                     slide.src= img_arr[random];
-                }, 400);
+                }, 200);
+
+                slide.addEventListener("mouseover",function(){
+                    clearInterval(interval)
+                });
+                slide.addEventListener("mouseout",function(){
+                    interval =  setInterval(() => {
+                    let random = Math.floor(Math.random() * img_arr.length);
+                    slide.src= img_arr[random];
+                }, 200);
+                });
+
            </script>
 
             <div class="circle"></div>
