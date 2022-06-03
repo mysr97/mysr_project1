@@ -661,6 +661,7 @@
         width: 400px;
         height: auto;
         border-radius: 100%;
+        border: none;
     }
 
     #slide_box img {
@@ -1160,6 +1161,7 @@ header #menu {
     margin: 60px auto;
     width: 700px;
     height: 400px;
+    border: 25px solid rgba(251, 217, 20);
     display: block;
     overflow: hidden;
 }
@@ -1249,8 +1251,8 @@ header #menu {
 }
 .sub_content_box:nth-child(4) {
     width: 50%;
-    margin-top: 0px;
-    margin-right: 70px;
+    margin-top: -100px;
+    margin-right: 0px;
     align-self: flex-end;
 }
 .sub_content_box:nth-child(5) {
