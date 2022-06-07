@@ -86,6 +86,31 @@
         font-size: 60px;
     }
     
+        /*-----가격 합계 박스-----*/
+        #value_box {
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 100;
+            background-color:rgba(0, 88, 171, 0.9);
+            color: white;
+        }
+        
+        #value_box > h4 {
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        #value_box > input {
+            text-align: center;
+            width: 200px;
+            line-height: 30px;
+            margin: 15px 25px 0;
+            border: none;
+            background-color: #fff;
+        }
     
     
     
@@ -604,8 +629,32 @@
         right: 45px;
         font-size: 60px;
     }
-    
-    
+
+    /*-----가격 합계 박스-----*/
+#value_box {
+    width: 250px;
+    height: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    background-color:rgba(0,0,0,0.2);
+}
+
+#value_box > h4 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#value_box > input {
+    text-align: center;
+    width: 200px;
+    line-height: 30px;
+    margin: 15px 25px 0;
+    border: none;
+    background-color: #fff;
+}
+
     
     
     /*-----서브 탑-----*/
@@ -1045,6 +1094,7 @@ header #menu {
     background-color: transparent;
 }
 
+
 .logo {
     width: 120px;
     margin: 0 0 0 50px;
@@ -1115,6 +1165,30 @@ header #menu {
     font-size: 60px;
 }
 
+    /*-----가격 합계 박스-----*/
+    #value_box {
+        width: 250px;
+        height: 100px;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 100;
+        background-color:rgba(0,0,0,0.2);
+    }
+    
+    #value_box > h4 {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    #value_box > input {
+        text-align: center;
+        width: 200px;
+        line-height: 30px;
+        margin: 15px 25px 0;
+        border: none;
+        background-color: #fff;
+    }
 
 
 
@@ -1189,7 +1263,7 @@ header #menu {
 
 .circle2 {
     position: absolute;
-    left: 86%;
+    left: 78%;
     top: 80%;
     width: 200px;
     height: 200px;
@@ -1209,8 +1283,8 @@ header #menu {
 
 .circle4 {
     position: absolute;
-    left: 84%;
-    top: 75%;
+    left: 77%;
+    top: 74%;
     width: 100px;
     height: 100px;
     border-radius: 200px;
