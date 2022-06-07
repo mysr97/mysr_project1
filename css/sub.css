@@ -125,7 +125,18 @@
         background-attachment: fixed;
         background-size: cover;
         background-image: url("../img/sub_1.jpg");
-        filter: brightness(0.7) opacity(0.7) grayscale(0.4);
+        filter: brightness(0.5) opacity(0.8) grayscale(0.4);
+    }
+    
+    #sub_top + h2 {
+        position: relative;
+        transform: translate(-50%, -300%);
+        top: 50%;
+        left: 50%;
+        font-size: 4em;
+        font-weight: 300;
+        color: rgba(255, 255, 255);
+        display: inline-block;
     }
     
     
@@ -668,9 +679,19 @@
         background-attachment: fixed;
         background-size: cover;
         background-image: url("../img/sub_1.jpg");
-        filter: brightness(0.7) opacity(0.7) grayscale(0.4);
+        filter: brightness(0.5) opacity(0.8) grayscale(0.4);
     }
     
+    #sub_top + h2 {
+        position: relative;
+        transform: translate(-50%, -270%);
+        top: 50%;
+        left: 50%;
+        font-size: 4.5em;
+        font-weight: 300;
+        color: rgba(255, 255, 255);
+        display: inline-block;
+    }
     
     
     /*-----서브 콘텐츠-----*/
@@ -1203,7 +1224,18 @@ header #menu {
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../img/sub_1.jpg");
-    filter: brightness(0.7) opacity(0.7) grayscale(0.4);
+    filter: brightness(0.5) opacity(0.8) grayscale(0.4);
+}
+
+#sub_top + h2 {
+    position: relative;
+    transform: translate(-50%, -300%);
+    top: 50%;
+    left: 50%;
+    font-size: 5em;
+    font-weight: 300;
+    color: rgba(255, 255, 255);
+    display: inline-block;
 }
 
 
