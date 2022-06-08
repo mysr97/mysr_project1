@@ -15,34 +15,9 @@
     <title>IKEA_sub</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/sr_hm.js"></script> <!-- 햄버거 메뉴 -->
+    <script src="js/sr_three.js"></script> <!-- 계산 -->
 
-    <!-- js 나중에 분리 -->
-    <script> 
-                // 햄버거 메뉴
-
-                if (window.matchMedia("(min-width: 1200px)").matches) {
-            function openLeftMenu() {
-                document.getElementById("left_menu").style.width = "30%";
-            }/*-- #left_menu의 width를 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
-            function closeLeftMenu() {
-                document.getElementById("left_menu").style.width = "0%";
-            }
-        } else if(window.matchMedia("(min-width: 700px)").matches) {
-            function openLeftMenu() {
-                document.getElementById("left_menu").style.width = "40%";
-            }/*-- #left_menu의 width를 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
-            function closeLeftMenu() {
-                document.getElementById("left_menu").style.width = "0%";
-            }
-        } else {
-            function openLeftMenu() {
-                document.getElementById("left_menu").style.width = "60%";
-            }/*-- #left_menu의 width를 변경시켜 왼쪽 메뉴가 나타날 수 있도록 함.--*/
-            function closeLeftMenu() {
-                document.getElementById("left_menu").style.width = "0%";
-            }
-        };
-    </script>
 </head>
 
 <body>
@@ -74,17 +49,7 @@
             <input name="total" id="total" value="0" disabled>
         </div>
 
-        <script>
-            function pdt() {
-                var basic_product = Number(document.getElementById("total").defaultValue);
 
-                for(var i=1; i<=6; i++){
-                    var eleObj = document.getElementById("opt"+i);
-                    if(eleObj.checked) basic_product+=Number(eleObj.value);
-                }
-                document.getElementById("total").value = basic_product.toLocaleString()+"원";
-            }
-        </script>
     
         <div id="sub_top">
         </div>
@@ -96,25 +61,8 @@
             <div id="slide_box">
                 <img src="img/sub_product_j1.jpg" alt="1" id="slide">
             </div>
-            <script>
-                let slide = document.getElementById("slide");
-                let img_arr = ["img/sub_product_j1.jpg", "img/sub_product_j2.jpg", "img/sub_product_j3.jpg", "img/sub_product_j4.jpg","img/sub_product_j5.jpg","img/sub_product_j6.jpg"];
-           
-                let interval = setInterval(() => {
-                    let random = Math.floor(Math.random() * img_arr.length);
-                    slide.src= img_arr[random];
-                }, 200);
-
-                slide.addEventListener("mouseover",function(){
-                    clearInterval(interval)
-                });
-                slide.addEventListener("mouseout",function(){
-                    interval =  setInterval(() => {
-                    let random = Math.floor(Math.random() * img_arr.length);
-                    slide.src= img_arr[random];
-                }, 200); // 변수에 다시 setInterval 함수의 반환값을 재할당하여 재시작
-                });
-           </script>
+            
+            <script src="js/sr_four.js"></script> <!-- 랜덤 슬라이드 -->
 
             <div class="circle"></div>
             <div class="circle2"></div>
