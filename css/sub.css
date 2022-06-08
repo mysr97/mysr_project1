@@ -801,6 +801,7 @@
         margin-left: 20px;
         align-self: flex-start;
         padding: 0;
+        /* opacity: 0; */
     }
     .sub_content_box:nth-child(2) {
         width: 500px;
@@ -1344,6 +1345,7 @@ header #menu {
     margin-left: 0px;
     align-self: flex-start;
     padding: 0;
+    /* opacity: 0; */
 }
 .sub_content_box:nth-child(2) {
     width: 50%;
